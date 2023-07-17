@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_utama"
+    app:startDestination="@id/homeFr">
+
+    <fragment
+        android:id="@+id/homeFr"
+        android:name="com.example.proyek_android.HomeFr"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFr_to_journalFr"
+            app:destination="@id/journalFr" />
+        <action
+            android:id="@+id/action_homeFr_to_profileFr2"
+            app:destination="@id/profileFr2" />
+        <action
+            android:id="@+id/action_homeFr_to_addNewProjectAct"
+            app:destination="@id/addNewProjectAct" />
+        <action
+            android:id="@+id/action_homeFr_to_editProjectAct"
+            app:destination="@id/editProjectAct" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalFr"
+        android:name="com.example.proyek_android.JournalFr"
+        android:label="fragment_journal"
+        tools:layout="@layout/fragment_journal" >
+        <action
+            android:id="@+id/action_journalFr_to_journalHistoryAct"
+            app:destination="@id/journalHistoryAct" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFr2"
+        android:name="com.example.proyek_android.ProfileFr"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFr2_to_projectHistoryAct"
+            app:destination="@id/projectHistoryAct" />
+        <action
+            android:id="@+id/action_profileFr2_to_taskHistoryAct"
+            app:destination="@id/taskHistoryAct" />
+    </fragment>
+    <activity
+        android:id="@+id/editProfileAct"
+        android:name="com.example.proyek_android.EditProfileAct"
+        android:label="activity_edit_profile"
+        tools:layout="@layout/activity_edit_profile" />
+    <activity
+        android:id="@+id/addNewProjectAct"
+        android:name="com.example.proyek_android.AddNewProjectAct"
+        android:label="activity_add_new_project"
+        tools:layout="@layout/activity_add_new_project" />
+    <activity
+        android:id="@+id/editProjectAct"
+        android:name="com.example.proyek_android.EditProjectAct"
+        android:label="activity_edit_project"
+        tools:layout="@layout/activity_edit_project" />
+    <activity
+        android:id="@+id/journalHistoryAct"
+        android:name="com.example.proyek_android.JournalHistoryAct"
+        android:label="activity_journal_history"
+        tools:layout="@layout/activity_journal_history" />
+    <activity
+        android:id="@+id/projectHistoryAct"
+        android:name="com.example.proyek_android.ProjectHistoryAct"
+        android:label="activity_project_history"
+        tools:layout="@layout/activity_project_history" />
+    <activity
+        android:id="@+id/taskHistoryAct"
+        android:name="com.example.proyek_android.TaskHistoryAct"
+        android:label="activity_task_history"
+        tools:layout="@layout/activity_task_history" />
+    <fragment
+        android:id="@+id/articleFr"
+        android:name="com.example.proyek_android.ArticleFr"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" />
+</navigation>

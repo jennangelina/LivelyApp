@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/rectangle_15.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable/rectangle_outline_cancel.xml" value="0.121" />
+        <entry key="app/src/main/res/layout/activity_add_new_project.xml" value="0.2748685026290156" />
+        <entry key="app/src/main/res/layout/activity_list_pujasera.xml" value="0.14791666666666667" />
+        <entry key="app/src/main/res/layout/alert_confirmation_dialog.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/bottom_sheet_project.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.4741338094075521" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19610507246376813" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

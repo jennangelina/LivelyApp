@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileAct">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato"
+            android:text="Edit Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_edit_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile"
+            app:srcCompat="@drawable/profile_picture_female" />
+
+        <LinearLayout
+            android:id="@+id/ll_biodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_edit_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:fontFamily="@font/lato"
+                android:text="Full Name"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lato"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Email"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lato"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Phone Number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_edit_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lato"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Gender"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_edit_gender"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:background="@drawable/colorborder">
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/rb_edit_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_boy"
+                    android:text="Male" />
+                <RadioButton
+                    android:id="@+id/rb_edit_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Female"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_girl"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Birth Date"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tf_edit_birthdate"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:background="@drawable/colorborder"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:fontFamily="@font/lato"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                tools:text="@tools:sample/date/ddmmyy" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_savechanges"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/green_pastel"
+            android:fontFamily="@font/lato"
+            android:text="Save Changes"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_biodata" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="@color/green_pastel"
+            android:fontFamily="@font/lato"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_savechanges" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
